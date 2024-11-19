@@ -17,7 +17,8 @@ from urllib.request import Request, urlopen
 
 
 # Define an output folder
-output_directory = os.path.join("models", "ycb")
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_directory = os.path.join(root_dir, "ycb")
 
 # Define a list of objects to download from
 # http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/

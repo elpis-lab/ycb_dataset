@@ -2,12 +2,16 @@
 Scripts from https://github.com/harvard-microrobotics/object2urdf
 """
 
+import os
 from object_urdf import ObjectUrdfBuilder
 
 # Build entire libraries of URDFs
 # This is only suitable for objects built with single obj/stl file
 # Models such as robots or articulated objects will not work properly
-object_folder = "ycb"
+
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+object_folder = root_dir + "/ycb"
+
 builder = ObjectUrdfBuilder(object_folder)
 builder.build_library(
     force_overwrite=False,

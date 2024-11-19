@@ -16,9 +16,11 @@ def compress_image(origin, target, quality=90):
 
 # Compress PNG texture of the entire library
 # Loop for subfolders
+del_prev_img = False
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 object_folder = "ycb"
 
-curr_dir = os.getcwd() + "/" + object_folder + "/"
+curr_dir = root_dir + "/" + object_folder + "/"
 for subdir in os.listdir(curr_dir):
     curr_path = os.path.join(curr_dir, subdir)
     if not os.path.isdir(curr_path):
@@ -35,3 +37,6 @@ for subdir in os.listdir(curr_dir):
 
     print("Compressing", subdir)
     compress_image(file_name, target, quality=80)
+
+    if del_prev_img:
+        os.remove(file_name)
