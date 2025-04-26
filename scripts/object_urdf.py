@@ -101,8 +101,6 @@ class ObjectUrdfBuilder:
     # Do a convex decomposition
     def do_vhacd(self, filename, outfile, debug=False, **kwargs):
         try:
-            raise ValueError
-
             mesh = trimesh.load(filename)
             convex_list = mesh.convex_decomposition(**kwargs)
             convex = trimesh.util.concatenate(convex_list)
@@ -343,9 +341,9 @@ class ObjectUrdfBuilder:
                     "Your filetype needs to be an STL or OBJ to perform concave decomposition"
                 )
 
-            outfile = obj_filename.replace(".obj", "_" + self.suffix + ".obj")
+            outfile = obj_filename.replace(".obj", "_" + self.suffix + ".stl")
             collision_file = visual_file.replace(
-                ".obj", "_" + self.suffix + ".obj"
+                ".obj", "_" + self.suffix + ".stl"
             )
 
             # Only run a decomposition if one does not exist, or if the user forces an overwrite

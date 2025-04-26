@@ -12,7 +12,7 @@
 		<collision>
 			<origin xyz="0.028303653148494833 0.06646108978076667 -0.02360720585959244" rpy="0.0 0.0 0.0" />
 			<geometry>
-				<mesh filename="073-f_lego_duplo/google_16k/textured_vhacd.obj" scale="1 1 1" />
+				<mesh filename="073-f_lego_duplo/google_16k/textured_vhacd.stl" scale="1 1 1" />
 			</geometry>
 		</collision>
 		<inertial>

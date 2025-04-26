@@ -12,7 +12,7 @@
 		<collision>
 			<origin xyz="-0.008499561933269988 0.021533112701872234 -0.00670927433639299" rpy="0.0 0.0 0.0" />
 			<geometry>
-				<mesh filename="030_fork/google_16k/textured_vhacd.obj" scale="1 1 1" />
+				<mesh filename="030_fork/google_16k/textured_vhacd.stl" scale="1 1 1" />
 			</geometry>
 		</collision>
 		<inertial>

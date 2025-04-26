@@ -12,7 +12,7 @@
 		<collision>
 			<origin xyz="-0.0026626279153952586 -0.02222386939344705 -0.01637227553798352" rpy="0.0 0.0 0.0" />
 			<geometry>
-				<mesh filename="043_phillips_screwdriver/google_16k/textured_vhacd.obj" scale="1 1 1" />
+				<mesh filename="043_phillips_screwdriver/google_16k/textured_vhacd.stl" scale="1 1 1" />
 			</geometry>
 		</collision>
 		<inertial>

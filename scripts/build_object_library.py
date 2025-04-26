@@ -1,4 +1,4 @@
-"""Build URDF for objects. 
+"""Build URDF for objects.
 Scripts from https://github.com/harvard-microrobotics/object2urdf
 """
 
@@ -18,4 +18,5 @@ builder.build_library(
     decompose_concave=True,  # build *_vhacd.obj files
     force_decompose=False,  # overwrite decomposed files
     center="mass",  # object center is at mass center
+    decompose_resolution=10000,  # resolution for vhacd (default 4e5)
 )

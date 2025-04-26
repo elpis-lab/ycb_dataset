@@ -12,7 +12,7 @@
 		<collision>
 			<origin xyz="-0.01459152171807974 -0.0031621364077388443 -0.007400674371156582" rpy="0.0 0.0 0.0" />
 			<geometry>
-				<mesh filename="037_scissors/google_16k/textured_vhacd.obj" scale="1 1 1" />
+				<mesh filename="037_scissors/google_16k/textured_vhacd.stl" scale="1 1 1" />
 			</geometry>
 		</collision>
 		<inertial>
